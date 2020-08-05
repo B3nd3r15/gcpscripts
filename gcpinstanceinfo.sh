@@ -34,7 +34,7 @@
 
 
 # Header row for the CSV output
-echo "Project ID,Instance Name,Status,Zone,Instance Size,Internal IP,External IP, Creation Timestamp (UTC)"
+echo "Project ID,Instance Name,Status,Zone,Instance Size,Internal IP,External IP, Creation Timestamp (UTC), Github Direct"
 
 # for every project in the list get the required details. Remove CSV header from the gcloud output. Add the project id to the beginning of each row
 for project in  $(gcloud projects list --format="value(projectId)")
